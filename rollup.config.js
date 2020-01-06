@@ -12,7 +12,7 @@ const createConfig = (format) => {
     }
   })();
   return {
-    input: 'src/index.js',
+    input: 'src/index.ts',
     output: {
       banner: `/**\n * @author ${pkg.author.name}\n * @version ${pkg.version}\n * @name ${pkg.name}\n */`,
       compact: isBrowser,

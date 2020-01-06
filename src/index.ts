@@ -1,4 +1,6 @@
-function OneSpaces() {
+type ClassName = string | undefined | null | boolean | ClassName[];
+
+function OneSpaces(...args: ClassName[]) {
   let
     arg,
     index = 0,

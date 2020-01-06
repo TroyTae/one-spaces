@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "strict": true,
+    "target": "es3"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"],
+  "compileOnSave": false
+}

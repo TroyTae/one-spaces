@@ -1,1 +1,1 @@
-var OneSpaces=function n(){for(var p,r=0,a="";r<arguments.length;)(p=arguments[r++])&&(a&&(a+=" "),a+=p.pop?n.apply(0,p):p);return a};
+var OneSpaces=function r(){for(var n=[],a=0;a<arguments.length;a++)n[a]=arguments[a];for(var e,p=0,o="";p<arguments.length;)(e=arguments[p++])&&(o&&(o+=" "),o+=e.pop?r.apply(0,e):e);return o};

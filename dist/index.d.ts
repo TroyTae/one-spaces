@@ -1,2 +1,3 @@
-type ClassName = string | ClassName[];
-export default function(...classNames: ClassName[]): string;
+declare type ClassName = string | ClassName[];
+declare function OneSpaces(...args: ClassName[]): string;
+export default OneSpaces;
