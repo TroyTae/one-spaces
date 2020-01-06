@@ -1,10 +1,10 @@
 function OneSpaces() {
-  var
+  let
     arg,
     index = 0,
     className = ''
   ;
-  for (; index < arguments.length;) {
+  for (;index < arguments.length;) {
     if (arg = arguments[index++]) {
       if (className) {
         className += ' ';

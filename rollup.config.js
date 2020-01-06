@@ -1,5 +1,6 @@
 const pkg = require('./package.json');
 const {terser} = require('rollup-plugin-terser');
+const typescript = require('rollup-plugin-typescript2');
 
 const createConfig = (format) => {
   const isBrowser = (format === 'iife');
@@ -20,7 +21,10 @@ const createConfig = (format) => {
       file: file,
       name: pkg.name.split('-').map((v) => v.slice(0, 1).toUpperCase() + v.slice(1)).join(''),
     },
-    plugins: [isBrowser ? terser() : null].filter(Boolean)
+    plugins: [
+      typescript({ clean: true }),
+      isBrowser ? terser() : null
+    ].filter(Boolean)
   };
 };
 
