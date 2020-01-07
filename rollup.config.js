@@ -1,8 +1,13 @@
 const pkg = require('./package.json');
+const fs = require('fs');
 const rimraf = require('rimraf');
 const {terser} = require('rollup-plugin-terser');
 
-rimraf.sync('./dist');
+const DIST_DIRECTORY_PATH = './dist';
+const TYPES_FILE_NAME = 'index.d.ts';
+rimraf.sync(DIST_DIRECTORY_PATH);
+fs.mkdirSync(DIST_DIRECTORY_PATH);
+fs.copyFileSync(`./src/${TYPES_FILE_NAME}`, `${DIST_DIRECTORY_PATH}/${TYPES_FILE_NAME}`);
 
 const createConfig = (format) => {
   const isBrowser = (format === 'iife');

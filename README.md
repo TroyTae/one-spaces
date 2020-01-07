@@ -4,6 +4,7 @@
 
 # One Spaces
 A tiny module for making className 😎
+
 ## Installation
 
 ### npm (commonjs)
@@ -48,6 +49,7 @@ export default () => {
       <span className={spaces(styles.text, isActive && styles.active)}>
         Hello React!
       </span>
+      <button onClick={() => setActive(!isActive)}>Toggle</button>
     </div>
   );
 };
