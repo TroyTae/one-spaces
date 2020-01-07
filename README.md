@@ -1,3 +1,4 @@
+[![build](https://img.shields.io/github/workflow/status/TroyTae/one-spaces/build/master?style=flat-square)](https://github.com/TroyTae/one-spaces/actions?query=workflow%3Abuild)
 [![size](https://img.shields.io/github/size/TroyTae/one-spaces/dist/one-spaces.js?style=flat-square)](https://github.com/TroyTae/one-spaces/blob/master/dist/one-spaces.js)
 [![npm](https://img.shields.io/npm/v/one-spaces?color=%23fb3e44&style=flat-square)](https://www.npmjs.com/package/one-spaces)
 [![license](https://img.shields.io/github/license/TroyTae/one-spaces?style=flat-square)](https://github.com/TroyTae/one-spaces/blob/master/LICENSE)
