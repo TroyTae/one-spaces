@@ -1,3 +1,5 @@
+type a = number | string;
+
 function OneSpaces() {
   var
     arg,
@@ -18,5 +20,4 @@ function OneSpaces() {
   }
   return className;
 }
-
 export default OneSpaces;
