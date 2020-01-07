@@ -1,6 +1,6 @@
 /**
  * @author TroyTae
- * @version 1.2.7
+ * @version 1.2.9
  * @name one-spaces
  */
 'use strict';

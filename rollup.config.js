@@ -1,5 +1,8 @@
 const pkg = require('./package.json');
+const rimraf = require('rimraf');
 const {terser} = require('rollup-plugin-terser');
+
+rimraf.sync('./dist');
 
 const createConfig = (format) => {
   const isBrowser = (format === 'iife');

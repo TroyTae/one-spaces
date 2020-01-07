@@ -1,6 +1,6 @@
 {
   "name": "one-spaces",
-  "version": "1.2.7",
+  "version": "1.2.9",
   "description": "A tiny module for making className 😎",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -19,7 +19,8 @@
     "url": "https://github.com/TroyTae/one-spaces/issues"
   },
   "devDependencies": {
-    "rollup": "^1.27.14",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.28.0",
     "rollup-plugin-terser": "^5.1.3"
   },
   "scripts": {
