@@ -1,7 +1,8 @@
 .idea
+.github
 
 src
-test
+__test__
 node_modules
 
 rollup.config.js
