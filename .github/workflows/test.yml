@@ -14,15 +14,16 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '8.x'
-    - name: build
-      run: |
+    - run: |
         npm install
         npm run build
-      env:
-        CI: true
-    - name: unit
-      run: |
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '8.x'
+    - run: |
         npm install
         npm run test
-      env:
-        CI: true
