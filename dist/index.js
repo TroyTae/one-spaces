@@ -1,6 +1,6 @@
 /**
  * @author TroyTae
- * @version 1.2.9
+ * @version 1.3.1
  * @name one-spaces
  */
 'use strict';
@@ -11,7 +11,7 @@ function OneSpaces() {
     index = 0,
     className = ''
   ;
-  for (; index < arguments.length;) {
+  for (;index < arguments.length;) {
     if (arg = arguments[index++]) {
       if (className) {
         className += ' ';
