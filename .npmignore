@@ -4,7 +4,7 @@
 .DS_Store
 
 src
-__test__
+__tests__
 coverage
 node_modules
 
