@@ -5,6 +5,8 @@
 
 src
 __test__
+coverage
 node_modules
 
+jest.config.js
 rollup.config.js
