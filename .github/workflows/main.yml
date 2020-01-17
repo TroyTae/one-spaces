@@ -14,9 +14,8 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '8.x'
-    - run: |
-        npm install
-        npm run build
+    - run: npm install
+    - run: npm run build
   test:
     runs-on: ubuntu-latest
     steps:
@@ -24,6 +23,5 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '8.x'
-    - run: |
-        npm install
-        npm run test
+    - run: npm install
+    - run: npm run test
