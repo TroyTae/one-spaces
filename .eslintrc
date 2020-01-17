@@ -1,0 +1,14 @@
+{
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2015,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-cond-assign": 0,
+    "quotes": [
+      "error",
+      "single"
+    ]
+  }
+}
