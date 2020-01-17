@@ -7,7 +7,7 @@ function OneSpaces() {
   for (;index < arguments.length;) {
     if (arg = arguments[index++]) {
       if (className) {
-        className += ' ';
+        className += " ";
       }
       className += (
         arg.pop
