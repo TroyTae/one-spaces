@@ -23,14 +23,15 @@
     "jest": "^24.9.0",
     "rimraf": "^3.0.0",
     "rollup": "^1.29.0",
-    "rollup-plugin-terser": "^5.2.0"
+    "rollup-plugin-terser": "^5.2.0",
+    "naming-convention-transfer": "1.0.1"
   },
   "scripts": {
     "build": "rollup --c rollup.config.js",
     "test": "npm run test:unit & npm run test:lint",
     "test:unit": "jest",
-    "test:lint": "eslint --ext .js src/",
-    "fix:lint": "eslint --fix --ext .js src/"
+    "test:lint": "eslint src/index.js",
+    "fix:lint": "eslint --fix src/index.js"
   },
   "directories": {
     "lib": "dist",

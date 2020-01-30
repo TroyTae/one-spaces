@@ -2,6 +2,7 @@ const pkg = require('./package.json');
 const fs = require('fs');
 const rimraf = require('rimraf');
 const {terser} = require('rollup-plugin-terser');
+const {kebabToPascal} = require('naming-convention-transfer');
 
 const DIST_DIRECTORY_PATH = './dist';
 const TYPES_FILE_NAME = 'index.d.ts';
@@ -26,7 +27,7 @@ const createConfig = (format) => {
       strict : !isBrowser,
       format: format,
       file: file,
-      name: pkg.name.split('-').map((v) => v.slice(0, 1).toUpperCase() + v.slice(1)).join(''),
+      name: kebabToPascal(pkg.name)
     },
     plugins: [isBrowser ? terser() : null].filter(Boolean)
   };
