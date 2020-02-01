@@ -19,19 +19,12 @@
     "url": "https://github.com/TroyTae/one-spaces/issues"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "jest": "^24.9.0",
-    "rimraf": "^3.0.0",
-    "rollup": "^1.29.0",
-    "rollup-plugin-terser": "^5.2.0",
-    "naming-convention-transfer": "1.0.1"
+    "rollup-config-troy-recommended": "git://github.com/TroyTae/rollup-config-troy-recommended.git",
+    "jest": "^25.1.0"
   },
   "scripts": {
     "build": "rollup --c rollup.config.js",
-    "test": "npm run test:unit & npm run test:lint",
-    "test:unit": "jest",
-    "test:lint": "eslint src/index.js",
-    "fix:lint": "eslint --fix src/index.js"
+    "test": "jest"
   },
   "directories": {
     "lib": "dist",
