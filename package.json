@@ -18,13 +18,20 @@
     "email": "tjy970721@gmail.com",
     "url": "https://github.com/TroyTae/one-spaces/issues"
   },
+  "eslintConfig": {
+    "extends": "troy-recommended"
+  },
   "devDependencies": {
+    "eslint-config-troy-recommended": "git://github.com/TroyTae/eslint-config-troy-recommended.git",
     "rollup-config-troy-recommended": "git://github.com/TroyTae/rollup-config-troy-recommended.git",
     "jest": "^25.1.0"
   },
   "scripts": {
     "build": "rollup --c rollup.config.js",
-    "test": "jest"
+    "test": "npm run test:unit & npm run test:lint",
+    "test:unit": "jest",
+    "test:lint": "eslint --ext .ts src/",
+    "fix:lint": "eslint --fix --ext .ts src/"
   },
   "directories": {
     "lib": "dist",

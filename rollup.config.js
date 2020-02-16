@@ -8,7 +8,7 @@ fs.copyFileSync(`./src/${TYPES_FILE_NAME}`, `./dist/${TYPES_FILE_NAME}`);
 
 module.exports = ['cjs', 'esm', 'iife'].map((format) => (
   createConfig({
-    input: 'src/index.js',
+    input: 'src/index.ts',
     format,
     package: pkg
   })
