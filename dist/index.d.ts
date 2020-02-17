@@ -1,2 +1,3 @@
 declare type ClassName = undefined | null | boolean | string | ClassName[];
-export default function OneSpaces(...args: ClassName[]): string;
+declare function OneSpaces(...args: ClassName[]): string;
+export default OneSpaces;

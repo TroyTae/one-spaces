@@ -1,29 +1,22 @@
 /**
  * @author TroyTae
- * @version 1.3.2
+ * @version 1.3.3
  * @name one-spaces
  */
 'use strict';
 
 function OneSpaces() {
-  var
-    arg,
-    index = 0,
-    className = ''
-  ;
-  for (;index < arguments.length;) {
-    if (arg = arguments[index++]) {
-      if (className) {
-        className += ' ';
-      }
-      className += (
-        arg.pop
-          ? OneSpaces.apply(0, arg)
-          : arg
-      );
+    var args = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        args[_i] = arguments[_i];
     }
-  }
-  return className;
+    return args
+        .map(function (arg) {
+        return Array.isArray(arg) ?
+            OneSpaces.apply(0, arg) : arg;
+    })
+        .filter(Boolean)
+        .join(' ');
 }
 
 module.exports = OneSpaces;
