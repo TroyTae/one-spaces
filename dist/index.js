@@ -1,6 +1,6 @@
 /**
  * @author TroyTae
- * @version 1.3.3
+ * @version 1.3.4
  * @name one-spaces
  */
 'use strict';
@@ -10,13 +10,10 @@ function OneSpaces() {
     for (var _i = 0; _i < arguments.length; _i++) {
         args[_i] = arguments[_i];
     }
-    return args
-        .map(function (arg) {
-        return Array.isArray(arg) ?
-            OneSpaces.apply(0, arg) : arg;
-    })
+    return (args
         .filter(Boolean)
-        .join(' ');
+        .join()
+        .replace(/,/g, ' '));
 }
 
 module.exports = OneSpaces;
