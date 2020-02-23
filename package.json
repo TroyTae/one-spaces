@@ -28,10 +28,10 @@
   },
   "scripts": {
     "build": "rollup --c rollup.config.js",
-    "test": "npm run test:unit & npm run test:lint",
-    "test:unit": "jest",
+    "test": "npm run test:lint & npm run test:unit",
     "test:lint": "eslint --ext .ts src/",
-    "fix:lint": "eslint --fix --ext .ts src/"
+    "fix:lint": "eslint --fix --ext .ts src/",
+    "test:unit": "jest"
   },
   "directories": {
     "lib": "dist",
