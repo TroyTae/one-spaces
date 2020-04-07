@@ -1,12 +1,10 @@
 const pkg = require('./package.json');
-const { createConfig, clearDirectory } = require('rollup-config-troy-recommended');
+const {clearDirectory} = require('troyjs/node');
+const {createUniversalConfigs} = require('troyjs/rollup');
 
 clearDirectory('./dist');
 
-module.exports = ['cjs', 'esm', 'iife'].map((format) => (
-  createConfig({
-    input: 'src/index.ts',
-    format,
-    package: pkg
-  })
-));
+module.exports = createUniversalConfigs({
+  input: 'src/index.ts',
+  package: pkg
+});
