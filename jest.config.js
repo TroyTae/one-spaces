@@ -1,6 +1,3 @@
-module.exports = {
-  clearMocks: true,
-  resetMocks: true,
-  resetModules: true,
-  collectCoverage: true
-};
+const {defaultConfig} = require('troyjs/jest');
+
+module.exports = {...defaultConfig};

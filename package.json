@@ -22,9 +22,8 @@
     "extends": "troy-recommended"
   },
   "devDependencies": {
-    "eslint-config-troy-recommended": "git://github.com/TroyTae/eslint-config-troy-recommended.git",
-    "troyjs": "git://github.com/TroyTae/troyjs.git",
-    "jest": "^25.1.0"
+    "eslint-config-troy-recommended": "git+https://github.com/TroyTae/eslint-config-troy-recommended.git",
+    "troyjs": "git+https://github.com/TroyTae/troyjs.git"
   },
   "scripts": {
     "build": "rollup --c rollup.config.js",
