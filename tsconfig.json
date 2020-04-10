@@ -1,0 +1,6 @@
+{
+  "extends": "troyjs",
+  "compilerOptions": {
+    "declaration": true
+  }
+}
