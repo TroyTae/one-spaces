@@ -1,8 +1,8 @@
 const pkg = require('./package.json');
-const {clearDirectory} = require('troyjs/node');
+const fs  = require('fs-extra');
 const {createUniversalConfigs} = require('troyjs/rollup');
 
-clearDirectory('./dist');
+fs.emptyDirSync('./dist');
 
 module.exports = createUniversalConfigs({
   input: 'src/index.ts',
