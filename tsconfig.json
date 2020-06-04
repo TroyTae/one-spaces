@@ -1,5 +1,5 @@
 {
-  "extends": "troyjs",
+  "extends": "troyjs/tsconfig",
   "compilerOptions": {
     "declaration": true
   }
