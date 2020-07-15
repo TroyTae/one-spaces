@@ -1,10 +1,3 @@
-/**
- * @author TroyTae
- * @version 1.3.5
- * @name one-spaces
- */
-'use strict';
-
 function OneSpaces(args) {
   var item, index = 0, str = '';
 
@@ -21,8 +14,6 @@ function OneSpaces(args) {
   return str;
 }
 
-function index () {
+export default function () {
   return OneSpaces(arguments);
 }
-
-module.exports = index;

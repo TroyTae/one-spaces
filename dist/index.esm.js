@@ -1,17 +1,26 @@
 /**
  * @author TroyTae
- * @version 1.3.4
+ * @version 1.3.5
  * @name one-spaces
  */
-function OneSpaces() {
-    var args = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        args[_i] = arguments[_i];
+function OneSpaces(args) {
+  var item, index = 0, str = '';
+
+  while (index < args.length) {
+    if (
+      (item = args[index++]) &&
+      (!item.pop || (item = OneSpaces(item)))
+    ) {
+      str && (str += ' ');
+      str += item;
     }
-    return (args
-        .filter(Boolean)
-        .join()
-        .replace(/,/g, ' '));
+  }
+
+  return str;
 }
 
-export default OneSpaces;
+function index () {
+  return OneSpaces(arguments);
+}
+
+export default index;
