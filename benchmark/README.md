@@ -15,15 +15,14 @@ classnames | classcat | clsx | one-spaces
 ## Benchmark
 
 ### Environment
-
-**device**:	MacBook Pro (16-inch, 2019)  
-**processor**: 2.4GHz 8-Core Intel Core i9  
-**npm**: v6.14.4  
-**node**: v12.14.1  
-
+```
+Device:    MacBook Pro (16-inch, 2019)  
+Processor: 2.4GHz 8-Core Intel Core i9  
+Npm:       v6.14.4  
+Node:      v12.14.1  
+````
 
 ### Result
-
 ```
 Benchmark Test: arguments
 classnames x 3,735,739 ops/sec ±0.84% (89 runs sampled)
