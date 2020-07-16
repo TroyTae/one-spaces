@@ -1,6 +1,6 @@
 {
   "name": "one-spaces",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "description": "A tiny module for making className 😎",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -22,7 +22,6 @@
     "extends": "troy-recommended"
   },
   "devDependencies": {
-    "benchmark": "^2.1.4",
     "eslint-config-troy-recommended": "git+https://github.com/TroyTae/eslint-config-troy-recommended.git",
     "troyjs": "git+https://github.com/TroyTae/troyjs.git"
   },

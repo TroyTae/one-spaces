@@ -1,28 +1,7 @@
 /**
  * @author TroyTae
- * @version 1.3.5
+ * @version 1.3.6
+ * @license MIT
  * @name one-spaces
  */
-'use strict';
-
-function OneSpaces(args) {
-  var item, index = 0, str = '';
-
-  while (index < args.length) {
-    if (
-      (item = args[index++]) &&
-      (!item.pop || (item = OneSpaces(item)))
-    ) {
-      str && (str += ' ');
-      str += item;
-    }
-  }
-
-  return str;
-}
-
-function index () {
-  return OneSpaces(arguments);
-}
-
-module.exports = index;
+function n(r){for(var o,t=0,e="";t<r.length;)!(o=r[t++])||o.pop&&!(o=n(o))||(e&&(e+=" "),e+=o);return e}module.exports=function(){return n(arguments)};

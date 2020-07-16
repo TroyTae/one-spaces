@@ -3,9 +3,9 @@
 [![license](https://img.shields.io/github/license/TroyTae/one-spaces?style=flat-square)](https://github.com/TroyTae/one-spaces/blob/master/LICENSE)
 
 # One Spaces
-A tiny module for making className 😎
-We are striving for the best performance and lightweight.
-Please check our [benchmark](./bench)!!
+A tiny module for making className 😎  
+We are striving for the best performance and lightweight.  
+Please check our [benchmark](./benchmark)!!  
 
 ## Installation
 

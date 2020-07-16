@@ -4,7 +4,7 @@
 .DS_Store
 
 src
-bench
+benchmark
 __tests__
 coverage
 node_modules
