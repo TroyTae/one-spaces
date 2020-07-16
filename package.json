@@ -22,6 +22,7 @@
     "extends": "troy-recommended"
   },
   "devDependencies": {
+    "benchmark": "^2.1.4",
     "eslint-config-troy-recommended": "git+https://github.com/TroyTae/eslint-config-troy-recommended.git",
     "troyjs": "git+https://github.com/TroyTae/troyjs.git"
   },

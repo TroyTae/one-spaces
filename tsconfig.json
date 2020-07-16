@@ -1,6 +1,0 @@
-{
-  "extends": "troyjs/tsconfig",
-  "compilerOptions": {
-    "declaration": true
-  }
-}

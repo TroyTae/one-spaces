@@ -1,10 +1,11 @@
 [![build](https://img.shields.io/github/workflow/status/TroyTae/one-spaces/one-spaces/master?style=flat-square)](https://github.com/TroyTae/one-spaces/actions?query=workflow%3Aone-spaces)
-[![size](https://img.shields.io/github/size/TroyTae/one-spaces/dist/one-spaces.js?style=flat-square)](https://github.com/TroyTae/one-spaces/blob/master/dist/one-spaces.js)
 [![npm](https://img.shields.io/npm/v/one-spaces?color=%23fb3e44&style=flat-square)](https://www.npmjs.com/package/one-spaces)
 [![license](https://img.shields.io/github/license/TroyTae/one-spaces?style=flat-square)](https://github.com/TroyTae/one-spaces/blob/master/LICENSE)
 
 # One Spaces
 A tiny module for making className 😎
+We are striving for the best performance and lightweight.
+Please check our [benchmark](./bench)!!
 
 ## Installation
 
@@ -32,10 +33,10 @@ el.className = OneSpaces('cls1', 'cls2', 'cls3');
 // array
 el.className = OneSpaces(['cls1', 'cls2'], ['cls3']);
 // exclude falsy
-el.className = OneSpaces('cls1', null, 'cls2', false && 'none', true && 'cls3');
+el.className = OneSpaces('cls1', null, 'cls2', false && 'none', true && 'cls3', []);
 // mix
 el.className = OneSpaces(['cls1', 'cls2'], null, 'cls3');
-// without module
+// without one-spaces
 el.className = 'cls1 cls2' + ' cls3';
 ```
 
