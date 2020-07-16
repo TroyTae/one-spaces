@@ -6,7 +6,9 @@ function OneSpaces(args) {
       (item = args[index++]) &&
       (!item.pop || (item = OneSpaces(item)))
     ) {
-      str && (str += ' ');
+      if (str) {
+        str += ' ';
+      }
       str += item;
     }
   }
