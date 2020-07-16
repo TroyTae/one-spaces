@@ -5,7 +5,7 @@
 # One Spaces
 A tiny module for making className 😎  
 We are striving for the best performance and lightweight.  
-Please check our [benchmark](./benchmark)!!  
+Please check our [benchmark result](./benchmark)!!!  
 
 ## Installation
 
