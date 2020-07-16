@@ -1,11 +1,10 @@
 # Benchmark
 Every benchmark is measured based on version released at npm.
 
-### Differences from npm release version
-But before test, I remove every comments and minify file.  
-Because `classnames` not provide min file.  
-And I passed array for classcat test.  
-Because `classcat` not support arguments.  
+> But before test, I remove every comments and minify file.  
+> Because `classnames` not provide min file.  
+> And I passed array for classcat test.  
+> Because `classcat` not support arguments.  
 
 
 ## File Size
@@ -17,10 +16,10 @@ classnames | classcat | clsx | one-spaces
 
 ### Environment
 
-`device`:	MacBook Pro (16-inch, 2019)  
-`processor`: 2.4GHz 8-Core Intel Core i9  
-`npm`: v6.14.4  
-`node`: v12.14.1  
+**device**:	MacBook Pro (16-inch, 2019)  
+**processor**: 2.4GHz 8-Core Intel Core i9  
+**npm**: v6.14.4  
+**node**: v12.14.1  
 
 
 ### Result
