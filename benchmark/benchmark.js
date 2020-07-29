@@ -16,10 +16,10 @@ function printTitle(title) {
 function benchmark() {
   const suite = new Suite();
   suite
-    .add('classnames', () => classnames.apply(classnames, arguments))
-		.add('classcat', () => classcat.apply(classcat, [...arguments]))
-		.add('clsx', () => clsx.apply(clsx, arguments))
-		.add('one-spaces', () => spaces.apply(clsx, arguments))
+    .add('classnames', () => classnames.apply(null, arguments))
+		.add('classcat', () => classcat.apply(null, [...arguments]))
+		.add('clsx', () => clsx.apply(null, arguments))
+		.add('one-spaces', () => spaces.apply(null, arguments))
     .on('cycle', (e) => console.log(logColor, e.target.toString()))
     .on('complete', () => console.log(infoColor, `Fastest is ${suite.filter('fastest').map('name')}`));
   suite.run();
