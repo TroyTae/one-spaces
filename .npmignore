@@ -1,11 +1,8 @@
-.idea
-.github
 .vscode
 .DS_Store
 
 src
 benchmark
-__tests__
 coverage
 node_modules
 
