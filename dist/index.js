@@ -1,7 +1,1 @@
-/**
- * @author TroyTae
- * @version 1.3.8
- * @license MIT
- * @name one-spaces
- */
-function n(r){for(var o,t=0,e="";t<r.length;)(o=r[t++])&&(o.pop&&!(o=n(o))||(e&&(e+=" "),e+=o));return e}module.exports=function(){return n(arguments)};
+"use strict";function r(t){for(var n,e=0,o="";e<t.length;)(n=t[e++])&&(n.pop&&!(n=r(n))||(o&&(o+=" "),o+=n));return o}module.exports=function(){return r(arguments)};
